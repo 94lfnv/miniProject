@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "DungGeunMo";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+* {
+    background-color: rgb(127, 255, 212);
+    font-family: "DungGeunMo";
+    }
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 110px;
+    color: #FF0040;
+    /* text-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11); */
+}
+
+.reStart {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.bomb2 {
+    max-width: 35px;
+}
+
+.users {
+    display: flex;
+    justify-content: center;
+}
+
+.two-users {
+    display: inline-flex;
+}
+
+.fruit-img {
+    max-width: 130px;
+    margin: 5vw 12vh;
+    margin-bottom: 40px;
+}
+
+.waiting-place {
+    display: flex;
+    justify-content: center;
+}
+
+.input-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.waitingword {
+    display: inline-flex;
+    width: 140px;
+    height: 40px;
+    margin: 0 9vh;
+    color: #FF0040;
+}
+
+.input-box {
+    padding:15px;
+    width: 200px;
+    margin-top: 80px;
+    color: #FF0040;
+    border: solid 1.5px #FF0040;
+}
+
+#input-btn {
+    background-color: #FF0040;
+    width: 100px;
+    color: rgb(127, 255, 212)
+}
+
+input::placeholder {
+    color:#FF0040;
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>끝말잇기 게임</title>
+    <link rel="stylesheet" href="words_game.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">끝 말 잇 기</div>
+      <button class="reStart">다시 시작</button>
+    </div>
+    <div class="user-wrap">
+      <div class="bomb">
+        <img src="bomb3.png" alt="bomb" class="bomb2" />
+      </div>
+      <div class="users">
+        <div class="first-user" class="two-users">
+          <img
+            src="cherry.png"
+            alt="firstUser_cherry"
+            id="first-user-img"
+            class="fruit-img"
+          />
+        </div>
+        <div class="second-user" class="two-users">
+          <img
+            src="lemon.png"
+            alt="secondUser_lemon"
+            id="second-user-img"
+            class="fruit-img"
+          />
+        </div>
+      </div>
+      <div class="waiting-place">
+        <div id="firstword" class="waitingword"></div>
+        <div id="secondword" class="waitingword"></div>
+      </div>
+      <div class="input-wrap">
+        <input
+          id="input-text"
+          class="input-box"
+          type="text"
+          placeholder="단어를 입력하세요"
+        />
+        <button id="input-btn" class="input-box" type="button">입력</button>
+      </div>
+    </div>
+  </body>
+  <script src="words_game.js"></script>
+</html>
