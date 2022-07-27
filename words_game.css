@@ -1,22 +1,15 @@
-@font-face {
-    font-family: "DungGeunMo";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
-      format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
 
 * {
-    background-color: rgb(127, 255, 212);
-    font-family: "DungGeunMo";
+    background-color:#F2DCC9;
+    font-family: 'Jua', sans-serif;
     }
 
 .title {
-    font-size: 50px;
+    font-size: 48px;
     text-align: center;
-    margin-top: 110px;
-    color: #FF0040;
-    /* text-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11); */
+    margin-top: 120px;
+    color:#048ABF;
+    text-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
 }
 
 .reStart {
@@ -24,13 +17,10 @@
     font-size: 15px;
 }
 
-.bomb2 {
-    max-width: 35px;
-}
-
 .users {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .two-users {
@@ -38,9 +28,83 @@
 }
 
 .fruit-img {
-    max-width: 130px;
-    margin: 5vw 12vh;
+    max-width: 120px;
+    margin: 5vw 11vh;
     margin-bottom: 40px;
+    margin-top: 110px;
+}
+
+#second-user-img {
+    max-width: 100px;
+    transform: skew(-10deg);
+    padding-top: 6px;
+}
+
+.re-start-box {
+    position: absolute;
+    top: 20%;
+    width: 550px;
+    height: 200px;
+    text-align: center;
+    border: solid 2px #048ABF;
+    background-color: #048ABF;
+}
+
+.start-box {
+    position: absolute;
+    border: solid 2px #048ABF;
+    top: 5%;
+    width: 580px;
+    height: 420px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 35px;
+}
+
+p {
+    font-size: 25px;
+    margin: 0;
+}
+
+.ex {
+    font-size: 20px;
+}
+
+.start-button {
+    margin-top: 36px;
+    width: 160px;
+    padding: 8px 10px;
+    font-size: 22px;
+    border-radius: 50px;
+}
+
+.start-button:hover {
+    border: solid 2px #D90416;
+    color: #F2DCC9;
+    background-color: #048ABF;
+}
+
+.game-over {
+    font-size: 100px;
+    color: #D90416;
+    background-color: #f3ebe1;
+}
+
+.re-start {
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+    border: solid 2px #048ABF;
+    color:#BF213E;
+}
+
+.re-start:hover {
+    background-color: #D90416;
+    color: #F2DCC9;
 }
 
 .waiting-place {
@@ -55,27 +119,51 @@
 
 .waitingword {
     display: inline-flex;
-    width: 140px;
+    width: 110px;
     height: 40px;
-    margin: 0 9vh;
-    color: #FF0040;
+    color: #048ABF;
+}
+
+#firstword {
+    margin-right: 80px;
+    justify-content: center;
+    font-size: 23px;
+}
+
+#secondword {
+    margin-left: 80px;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.mini-watch {
+    font-size: 28px;
+    animation: motion 0.5s linear 0s infinite alternate; margin-top: 0;
+}
+
+@keyframes motion {
+    0% {margin-top: 0px;}
+    100% {margin-top: 10px;}
 }
 
 .input-box {
     padding:15px;
     width: 200px;
-    margin-top: 80px;
-    color: #FF0040;
-    border: solid 1.5px #FF0040;
+    margin-top: 40px;
+    color: #048ABF;
+    font-size: 17px;
+    border: solid 1.5px#0477BF;
 }
 
 #input-btn {
-    background-color: #FF0040;
+    background-color: #0477BF;
     width: 100px;
-    color: rgb(127, 255, 212)
+    font-size: 17px;
+    color: #F2DCC9;
 }
 
 input::placeholder {
-    color:#FF0040;
+    color:#048ABF;
 }
+
 

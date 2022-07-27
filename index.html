@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>끝말잇기 게임</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+    </style>
     <link rel="stylesheet" href="words_game.css" />
   </head>
   <body>
     <div class="header">
-      <div class="title">끝 말 잇 기</div>
-      <button class="reStart">다시 시작</button>
+      <div class="title">🎈끝 말 잇 기🎈</div>
     </div>
     <div class="user-wrap">
-      <div class="bomb">
-        <img src="bomb3.png" alt="bomb" class="bomb2" />
-      </div>
       <div class="users">
         <div class="first-user" class="two-users">
           <img
@@ -27,11 +26,25 @@
         </div>
         <div class="second-user" class="two-users">
           <img
-            src="lemon.png"
+            src="strawberry.png"
             alt="secondUser_lemon"
             id="second-user-img"
             class="fruit-img"
           />
+        </div>
+        <div class="re-start-box" id="reStartBox">
+          <div class="game-over">Game Over</div>
+          <button class="re-start" id="reStartBtn">다시 시작</button>
+        </div>
+        <div class="start-box" id="startBox">
+          <div class="game-start">
+            <h2>게임 조건👀</h2>
+            <p>1️⃣단어 내 띄어쓰기❌<br /></p>
+            <p>2️⃣방금 전 사용한 단어❌<br /></p>
+            <p class="ex">예)❌기러기->기러기,역삼역->역삼역❌<br /></p>
+            <p>3️⃣5초 안에 단어를 입력해주세요🚀<br /></p>
+          </div>
+          <button class="start-button" id="startBtn">시작할까요?</button>
         </div>
       </div>
       <div class="waiting-place">
@@ -39,6 +52,7 @@
         <div id="secondword" class="waitingword"></div>
       </div>
       <div class="input-wrap">
+        <div class="mini-watch">⏰</div>
         <input
           id="input-text"
           class="input-box"
