@@ -79,7 +79,6 @@ function finishGame() {
     if (count === 1) {
       alert("한 번 더 기회를 드릴게요. 5초 내에 입력해야 합니다!🔥");
       count--;
-      finishGame();
       inputText.value = "";
       inputText.focus();
     } else {
